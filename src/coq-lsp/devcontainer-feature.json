@@ -1,0 +1,21 @@
+{
+    "id": "coq-lsp",
+    "version": "1.0.0",
+    "name": "Coq LSP extension with Coq toolchain",
+    "dependsOn": {
+        "ghcr.io/devcontainers-contrib/features/opam-asdf:2": {}
+    },
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "main",
+            "description": "Version of Coq LSP to install from opam"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": ["ejgallego.coq-lsp"]
+        }
+    }
+}
